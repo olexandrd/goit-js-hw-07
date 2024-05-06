@@ -135,3 +135,39 @@ input {
     border: 1px solid #808080;
   }
 }
+
+.widget {
+  /* Typography */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.change-color {
+  /* Typography */
+  font-weight: 500;
+  color: #fff;
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border: none;
+
+  &:hover {
+    background-color: #6c8cff;
+  }
+}
