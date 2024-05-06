@@ -12,3 +12,71 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#categories {
+  /* Typography */
+  font-family: "Montserrat", sans-serif;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 0 auto;
+
+  .item {
+
+    /* Layout */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    width: 392px;
+    background: #f6f6fe;
+
+    ul {
+      /* Typography */
+
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.33;
+
+      /* Layout */
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 8px;
+      width: 360px;
+
+      li {
+        /* Typography */
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+
+        /* Layout */
+        border: 1px solid #808080;
+        border-radius: 4px;
+        width: 360px;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+
+}
