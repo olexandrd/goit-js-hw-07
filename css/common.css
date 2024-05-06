@@ -171,3 +171,62 @@ input {
     background-color: #6c8cff;
   }
 }
+
+#controls {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  background: #f6f6fe;
+  margin: 0 auto;
+
+  input {
+    width: 150px;
+  }
+
+  button {
+    /* Typography */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    border: none;
+  }
+
+
+  button:nth-of-type(1) {
+    background-color: #4e75ff;
+
+    &:hover {
+      background-color: #6c8cff;
+    }
+  }
+
+  button:nth-of-type(2) {
+    background-color: #ff4e4e;
+
+    &:hover {
+      background-color: #ff7070;
+    }
+  }
+}
+
+#boxes {
+  display: flex;
+}
