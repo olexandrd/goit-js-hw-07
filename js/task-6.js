@@ -28,10 +28,11 @@ function destroyBoxes() {
 
 createBtn.addEventListener('click', () => {
 	const amount = userInput.value;
-	if (amount === '' || !Number.isInteger(Number(amount)) || amount < 1 || amount > 100) {
+	if (!Number.isInteger(Number(amount)) || amount < 1 || amount > 100) {
 		return;
 	}
 	createBoxes(amount);
+	userInput.value = '';
 });
 
 resetBtn.addEventListener('click', () => {
