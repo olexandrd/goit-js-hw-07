@@ -12,6 +12,7 @@ const boxesContainer = document.querySelector('#boxes');
 
 function createBoxes(amount) {
 	const boxes = [];
+	destroyBoxes();
 	for (let i = 0; i < amount; i += 1) {
 		const box = document.createElement('div');
 		box.style.width = `${30 + i * 10}px`;
