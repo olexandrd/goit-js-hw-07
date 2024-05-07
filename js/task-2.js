@@ -14,19 +14,12 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
-const itemsContainer = document.createElement('ul');
-itemsContainer.classList.add('gallery');
+const itemsContainer = [];
 
 images.forEach((image) => {
-	const img = document.createElement('img');
-	img.classList.add('gallery-img');
-	img.src = image.url;
-	img.alt = image.alt;
-	img.width = 360;
-	const li = document.createElement('li');
-	li.classList.add('gallery-item');
-	li.appendChild(img);
-	itemsContainer.appendChild(li);
+	itemsContainer.push(
+		`<li class="gallery-item"><img class="gallery-img" src="${image.url}" alt="${image.alt}" width="360"></li>`,
+	);
 });
 
-gallery.replaceWith(itemsContainer);
+gallery.insertAdjacentHTML('afterbegin', itemsContainer.join(''));
